@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        .container {
+
+            background-color: rgb(172, 197, 205);
+            position:relative;
+
+
+        }
+        .img1{
+            /* position:relative;
+            left: 100px;             
+             top:100px; */
+             position:absolute;          /*absolute position with respect to the main container*/
+                left: 100px;
+                top:100px;
+
+                                                 /*relative position*/
+        }
+
+
+        p {
+            position: fixed;
+            top: 0px;
+            background-color: aquamarine; 
+            border:3px solid rgb(23, 27, 17);
+            border-radius:7px;        /*fixed position*/
+        }
+
+        img {
+            margin: 10px;
+            /* display:block; */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>learn about positioning in html</h2>
+    <p>The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left
+        properties determine the final location of positioned elements.</p>
+    <div class="container">
+        <img class="img1" src="about1.jpg" alt="positioning" width=170px height=200x></img>
+        <!--default all elements follow static property so  all other properties will not applicable on it-->
+
+        <img class="img2" src="about2.jpg" alt="positioning" width=200px height=200px></img>
+
+        <img class="img3" src="about3.jpg" alt="positioning" width=200px height=200px></img>
+
+        <img class="img4" src="about111.png" alt="positioning" width=170px height=200px></img>
+
+        <!-- <img class="img2" src="about2.jpg"alt="positioning" width=200px height=200px></img>
+
+    <img class="img3" src="about3.jpg"alt="positioning" width=200px height=200px></img>
+
+    <img class="img4" src="about111.png"alt="positioning" width=170px height=200px></img> 
+     -->
+    </div>
+</body>
+
+</html>
