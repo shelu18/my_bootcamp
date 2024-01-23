@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(26, 35, 33);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            color: white;
+            font-size: 30px;
+            text-shadow: 10px 10px 10px black;
+            background-color: red;
+            justify-content: center;
+            border: 1px solid black;
+
+            align-items: center;
+             /*transition: width 2s, height 4s; */
+            transition: all 3s linear;
+        }
+
+        #box:hover {
+            background-color: rgb(255, 0, 200);
+            height: 300px;
+            width: 300px;
+            border:5px solid greenyellow;
+            box-shadow: 10px 10px 10px rgb(38, 102, 185);
+            transform: translateX(100px);
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">ye mera dabba hai</div>
+</body>
+</html>
